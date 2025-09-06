@@ -9,15 +9,21 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
 
     Scaffold homepage = Scaffold(
-      appBar: AppBar(title: Text('<3'))
-      
+      appBar: AppBar(title: Text('GaboSoPogi')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // TODO :Implement Button
+        },
+        child: const Icon(Icons.add)
+      ),
     );
 
     return MaterialApp(
       home: homepage,
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          backgroundColor: const Color.fromARGB(255, 153, 0, 255)
+          backgroundColor: const Color.fromARGB(255, 68, 0, 255),
+          foregroundColor: Colors.black
         )
       ),
     );
